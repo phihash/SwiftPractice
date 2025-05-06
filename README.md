@@ -21,6 +21,11 @@ if let color = colors.randomElement() {
 let colors = ["赤", "青", "緑"]
 let color = colors.randomElement()!  // ← ! をつける
 print(color)
+if let newName = randomNames.randomElement() {
+    // newName使えるのはこのifの中だけ
+}
+if let は中でしか使えない
+guard let は外でも使える
 
 ## guard
  guard let color = colors.randomElement() else {
