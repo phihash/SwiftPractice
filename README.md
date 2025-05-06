@@ -36,3 +36,29 @@ guard let は外でも使える
     print(color)
 
 ```
+
+## 2 Quiz
+
+```
+ForEach(array.indices, id: \.self) { index in
+    Text(array[index])
+}
+```
+indices は 0..<array.count と同じ
+index を使って配列要素にアクセス
+要素に一意なIDがないときに便利
+
+```
+ForEach(array, id: \.self) { item in
+    Text(item)
+}
+```
+item は配列の中身（値そのもの）
+
+
+
+
+
+
+
+
