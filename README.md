@@ -22,5 +22,12 @@ let colors = ["赤", "青", "緑"]
 let color = colors.randomElement()!  // ← ! をつける
 print(color)
 
+## guard
+ guard let color = colors.randomElement() else {
+        print("nilだった場合")
+        return
+    }
+
+    print(color)
 
 ```
